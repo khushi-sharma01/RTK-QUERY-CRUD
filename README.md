@@ -13,7 +13,7 @@ RTK Query takes inspiration from other tools that have pioneered solutions for d
 
   RTK Query includes these APIs:
 
---> createApi(): The core of RTK Query's functionality. It allows you to define a set of "endpoints" that describe how to retrieve data from backend APIs and other async sources, including the configuration of how to fetch and transform that data. In most cases, you should use this once per app, with "one API slice per base URL" as a rule of thumb.
---> fetchBaseQuery(): A small wrapper around fetch that aims to simplify requests. Intended as the recommended baseQuery to be used in createApi for the majority of users.
---> <ApiProvider />: Can be used as a Provider if you do not already have a Redux store.
---> setupListeners(): A utility used to enable refetchOnMount and refetchOnReconnect behaviors
+1) createApi(): The core of RTK Query's functionality. It allows you to define a set of "endpoints" that describe how to retrieve data from backend APIs and other async sources, including the configuration of how to fetch and transform that data. In most cases, you should use this once per app, with "one API slice per base URL" as a rule of thumb
+2)  fetchBaseQuery(): A small wrapper around fetch that aims to simplify requests. Intended as the recommended baseQuery to be used in createApi for the majority of users.
+3)  <ApiProvider />: Can be used as a Provider if you do not already have a Redux store.
+4)  etupListeners(): A utility used to enable refetchOnMount and refetchOnReconnect behaviors
